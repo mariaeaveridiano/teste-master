@@ -4,19 +4,22 @@
   font-family: 'Poppins', sans-serif;
   margin: 0%;
 }
-
+.conteudo-left{
+  background-color: #40634C;
+  border-radius: 35px;
+  padding: 70px;
+  margin: 15px;
+  animation: defensivo 5s ease-in-out;
+}
+.conteudo-right{
+  background-color:transparent;
+}
 #site {
   background-image: linear-gradient(to right top, #252F34, #1E262B,#262f35,#00A335);
   animation: AnimationName 20s ease infinite;
   animation: AnimationName 20s ease infinite;
   animation: AnimationName 20s ease infinite;
   animation: AnimationName 20s ease infinite;
-}
-#ladodireito{
-  position: right;
-}
-#ladoesquerdo{
-position: left;
 }
 .header {
   display: flex;
@@ -129,4 +132,8 @@ position: left;
   100% {
     background-position: 0% 26%
   }
+}
+@keyframes defensivo{
+  from{top: 0px;}
+  to{top: 250px;}
 }
